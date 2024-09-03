@@ -1,7 +1,16 @@
 import React from 'react';
 import styles from '../styles/projectRegistration.module.css';
+import { auth ,db } from '../firebase'; //c
 
 const ProjectRegistration = () => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [name, setName] = useState('');
+    const [nic, setNIC] = useState('');
+    const [mobile, setMobile] = useState('');
+    
+
+
     return (
         <section className={styles.form_container}>
             <h2>Register Your Fundraising Project</h2>
