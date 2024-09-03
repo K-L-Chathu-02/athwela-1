@@ -10,6 +10,8 @@ import Signup from './pages/signup';
 import SignupOrganization from './pages/signupOrganization';
 import Select from './pages/select';
 import ProjectRegistration from './pages/projectRegistration'
+import {ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
 
     
       <Routes>
+        
         <Route path="/" element={<>
           <div><Home/></div>
           <footer><Footer/></footer></>} />
@@ -35,6 +38,8 @@ function App() {
         <Route path="/signup" element={<div><Signup/></div>} />
         <Route path="/signupOrganization" element={<div><SignupOrganization/></div>} />
       </Routes>
+      <ToastContainer />
+      
 
       
     </Router>
